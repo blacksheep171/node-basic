@@ -1,11 +1,14 @@
 // required library
 import express from 'express';
 import configViewEngine from './configs/viewEngine';
+require('dotenv').config();
 // create instance
 const app = express()
-// create port params
-const port = 3000
+const port = process.env.PORT
 
+// console.log(">> check port: ", port);
+
+// console.log(process.env); 
 configViewEngine(app);
 app.get('/', (req, res) => {
   res.render('test/index.ejs')
