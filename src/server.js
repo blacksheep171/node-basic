@@ -1,17 +1,19 @@
 // required library
-const express = require('express')
+import express from 'express';
+import configViewEngine from './configs/viewEngine';
 // create instance
 const app = express()
 // create port params
 const port = 3000
 
+configViewEngine(app);
 app.get('/', (req, res) => {
-  res.send('Hello World! 2023')
+  res.render('test/index.ejs')
 })
 
 app.get('/home', (req, res) => {
     res.send(`Welcome Home!`)
-  })
+})
   
 
 app.listen(port, () => {
