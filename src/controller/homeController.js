@@ -16,7 +16,7 @@ let getHomepage = (req, res) => {
                     address: row.address
                 })
             })
-            return res.render('index.ejs', {dataUser:data});
+            return res.render('index.ejs', {dataUser:data , title : 'Users Details'});
         });
       
 }
