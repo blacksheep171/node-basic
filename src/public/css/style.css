@@ -26,3 +26,11 @@ body {
     background-color: #04AA6D;
     color: white;
   }
+
+  /** form styles **/
+.create-user-container {
+    margin: 20px auto;
+}
+.create-user {
+  padding-left: 16px;
+}

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>NodeJS Basic</title>
 </head>
 
@@ -17,14 +18,8 @@
         <a href="#about">About</a>
     </div>
       
-    <div style="padding-left:16px">
-    <h2>List Users</h2>
-    <!-- <%= dataUser %> -->
-    <%= dataUser.length %>
-    </div>
-    
     <div class="w3-container">
-        <h2>Hoverable Table</h2>
+      <h2>List Users</h2>
       
         <table class="w3-table-all w3-hoverable">
           <thead>
@@ -51,6 +46,32 @@
              <% } %>
           </tbody>
         </table>
+    </div>
+    <div class="create-user-container">
+      <h2 class="create-user">Create new user</h2>
+      <div class="row justify-content-center align-items-center">
+        <div class="col-10 col-md-8 col-lg-6 ">
+        <form action="/create-user" method="post">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" class="form-control" id="firstName" placeholder="Enter your first name">
+          </div>
+          <div class="form-group ">
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" class="form-control" id="lastName" placeholder="Enter your last name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" class="form-control" id="email" placeholder="Enter email">
+          </div>
+          <div class="form-group mb-3">
+            <label for="text">Address</label>
+            <input type="address" name="address" class="form-control" id="address" placeholder="Enter address">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
       </div>
+      </div>
+  </div>
 </body>
 </html>
