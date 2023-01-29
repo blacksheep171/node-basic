@@ -60,3 +60,10 @@ body {
 hr {
   border-top: 3px solid #eee !important;
 }
+
+.node_not_found {
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
