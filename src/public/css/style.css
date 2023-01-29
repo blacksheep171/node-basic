@@ -28,9 +28,21 @@ body {
   }
 
   /** form styles **/
-.create-user-container {
+.create-user-container, .upload-file-container {
     margin: 20px auto;
 }
 .create-user {
   padding-left: 16px;
+}
+
+.upload-file-container {
+  padding: 15px;
+}
+
+.upload-file-container label {
+  display: block;
+}
+
+.btn-save {
+  margin-top: 15px;
 }
