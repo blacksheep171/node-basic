@@ -35,6 +35,11 @@ body {
   padding-left: 16px;
 }
 
+.actions {
+  display: flex !important;
+  gap: 15px;
+}
+
 .upload-file-container {
   padding: 15px;
 }
@@ -45,4 +50,13 @@ body {
 
 .btn-save {
   margin-top: 15px;
+}
+
+.btn-detail {
+  padding: 5px 0;
+  display: block;
+}
+
+hr {
+  border-top: 3px solid #eee !important;
 }
